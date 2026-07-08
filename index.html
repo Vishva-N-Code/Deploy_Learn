@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Login | Experience the Future</title>
+    <!-- Google Fonts for Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="login-container">
+        <!-- Visual background glow elements -->
+        <div class="glow-sphere glow-sphere-1"></div>
+        <div class="glow-sphere glow-sphere-2"></div>
+        
+        <section class="login-card">
+            <header class="login-header">
+                <div class="logo">
+                    <span class="logo-dot"></span>
+                    Antigravity
+                </div>
+                <h1>Welcome Back</h1>
+                <p class="subtitle">Enter your credentials to access your dashboard</p>
+            </header>
+
+            <form class="login-form" onsubmit="event.preventDefault();">
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <div class="input-wrapper">
+                        <input type="email" id="email" placeholder="name@example.com" required autocomplete="email">
+                        <span class="input-icon">✉</span>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="label-row">
+                        <label for="password">Password</label>
+                        <a href="#" class="forgot-link">Forgot password?</a>
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="password" id="password" placeholder="Enter password" required autocomplete="current-password">
+                        <span class="input-icon">🔒</span>
+                    </div>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Keep me logged in for 30 days</label>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    <span>Sign In</span>
+                    <span class="btn-arrow">→</span>
+                </button>
+            </form>
+
+            <footer class="login-footer">
+                <p>Don't have an account? <a href="#" class="signup-link">Create free account</a></p>
+            </footer>
+        </section>
+    </main>
+</body>
+</html>
